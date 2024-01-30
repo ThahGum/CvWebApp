@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    background: url(Pics/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.navbar {
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    width: 120px;
+    cursor: pointer;
+    margin-top: 1%;
+    margin-left: -2%;
+}
+
+ul {
+    margin-top: -4%;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+}
+
+ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: darkslategray;
+    margin: -3%;
+    transition: .4s ease;
+}
+
+ul li a:hover {
+    color: rgb(230, 104, 60);
+}
+
+.info {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; /* Adjusted width for centering */
+    text-align: center; /* Center text */
+}
+
+.info h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+.info span {
+    color: rgb(150, 66, 66);
+}
+
+.image {
+    width: 50%; /* Adjusted width for centering */
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px; /* Adjusted margin for centering */
+}
+
+.image img {
+    width: 50%;
+    height: 40%;
+    transition: left 2s ease;
+}
+
+.icons {
+    margin-top: 10px;
+    text-align: center;
+    clear: both;
+    color: black;
+}
+
+.icons ion-icon {
+    margin: 10px;
+    font-size: 30px;
+    color: black;
+    transition: .4s ease;
+}
+
+.icons ion-icon:hover {
+    color: rgb(59, 174, 209);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: xx-small;
+    padding: -5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Add these media query styles for responsiveness */
+@media only screen and (min-width: 769px) {
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: -1%;
+    }
+
+    ul {
+        margin-top: 0;
+    }
+    
+    .info {
+        width: 50%; /* Adjusted width for left column */
+        text-align: left; /* Align text to the left */
+        float: left;
+        margin-left: 7%;
+        margin-top: 6%;
+    }
+
+    .info h3 {
+        font-size: 18px;
+        letter-spacing: 1px;
+        line-height: 24px;
+    }
+
+    .info h4 {
+    
+        font-style: italic;
+    }
+
+    .image {
+        width: 30%; /* Adjusted width for right column */
+        margin-top: 0; /* Removed margin-top */
+        right: 30%
+    }
+
+    .image img {
+        width: 100%; /* Adjusted image width */
+        height: 40%; /* Keep aspect ratio */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Stack columns on smaller screens */
+        align-items: center;
+        margin-top: 0;
+    }
+    ul {
+        margin-top: 0;
+    }
+    
+    .info h2 {
+        font-size: 13px;
+        letter-spacing: 1px;
+        line-height: 14px;
+    }
+
+    .info h4 {
+        font-size: 11px;
+        letter-spacing: 1px;
+        line-height: 14px;
+        font-style: italic;
+    }
+
+    .icons {
+        margin-top: 4px;
+        text-align: center;
+        clear: both;
+        color: black;
+    }
+    
+    .icons ion-icon {
+        margin: 4px;
+        font-size: 19px;
+        color: black;
+        transition: .4s ease;
+    }
+
+
+    
+    .info, .image {
+        width: 90%; /* Adjusted width for centering */
+        text-align: center; /* Center text */
+    }
+
+    .image {
+        margin-top: 13px; /* Adjusted margin-top for centering */
+    }
+}
